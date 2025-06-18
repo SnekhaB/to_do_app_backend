@@ -24,3 +24,22 @@ to_do_app_backend\
 ├── requirements.txt\
 ├── Procfile\
 └── README.md
+
+## Deployment
+
+To deploy this project run
+
+Set Build Command: 
+```bash
+pip install -r requirements.txt
+```
+In requirements.txt make sure it includes:
+
+flask\
+flask-cors\
+gunicorn
+
+Set Start Command: 
+```bash
+gunicorn app:app
+```
